@@ -132,7 +132,7 @@ function getInternshipsPlaces(url,callback){
 
 }
 
-function getInternshipsPlaces(url,callback){
+function getInternshipsStreams(url,callback){
 	
 	
 	request(url, function (error, response, body) {
@@ -144,18 +144,21 @@ function getInternshipsPlaces(url,callback){
 			
 			var streamsArray = [];
 			
-			for(var  i=0;i<9;i++)
+		for(var  i=9;i<18;i++)
+		{
+			if(links[i]&&links[i].attribs)
 			{
-				if(links[i].attribs)
-				{
-					streamsArray.push({
-						'url':BASE_URL+links[i].attribs.href,
-						'title':links[i].children[0].data
-					});									
-				}			
+				streamsArray.push({
+					'url':BASE_URL+links[i].attribs.href,
+					'title':links[i].children[0].data
+				});	
 			}
-			
+		}			
+		
+		if (streamsArray.length>0)
 			callback(streamsArray);
+		else
+			callback(null);
 		}else {
 			callback(null);
 		}	
