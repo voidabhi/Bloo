@@ -54,6 +54,22 @@ app.get('/places',function(req,res){
 	});
 });
 
+app.get('/streams',function(req,res){
+	getInternshipsStreams(BASE_URL+'/internships',function(streamsArray)
+	{
+		if(streamsArray)
+			res.send({
+				status:'success',
+				places:streamsArray
+			});
+		else	
+			res.json({
+				status:'failure',
+				message:'some error occurred while making request'
+			});			
+	});
+});
+
 // Utilities
 
 function getInternshipsFields(url,callback){
@@ -115,6 +131,38 @@ function getInternshipsPlaces(url,callback){
 	});	
 
 }
+
+function getInternshipsPlaces(url,callback){
+	
+	
+	request(url, function (error, response, body) {
+		
+		if(!error&& response.statusCode == 200) {
+			$ = cheerio.load(body,{   normalizeWhitespace: true});
+			
+			var links = $('a.footer-link-anchor').toArray();
+			
+			var streamsArray = [];
+			
+			for(var  i=0;i<9;i++)
+			{
+				if(links[i].attribs)
+				{
+					streamsArray.push({
+						'url':BASE_URL+links[i].attribs.href,
+						'title':links[i].children[0].data
+					});									
+				}			
+			}
+			
+			callback(streamsArray);
+		}else {
+			callback(null);
+		}	
+	});	
+
+}
+
 
 // Starting App
 
