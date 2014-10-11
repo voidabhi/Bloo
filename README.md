@@ -2,4 +2,4 @@
 Bloo
 ===========
 
-Unofficial api of Internshala[!http://www.internshala.com]
+Unofficial api of [Internshala](http://www.internshala.com)
