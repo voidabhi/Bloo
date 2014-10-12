@@ -60,7 +60,7 @@ app.get('/streams',function(req,res){
 		if(streamsArray)
 			res.send({
 				status:'success',
-				places:streamsArray
+				streams:streamsArray
 			});
 		else	
 			res.json({
