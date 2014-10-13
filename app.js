@@ -134,7 +134,6 @@ function getInternshipsPlaces(url,callback){
 
 function getInternshipsStreams(url,callback){
 	
-	
 	request(url, function (error, response, body) {
 		
 		if(!error&& response.statusCode == 200) {
@@ -163,7 +162,6 @@ function getInternshipsStreams(url,callback){
 			callback(null);
 		}	
 	});	
-
 }
 
 
