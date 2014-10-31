@@ -7,6 +7,8 @@ Unofficial api of [Internshala](http://www.internshala.com)
 Contribution
 ============
 
+Feel free to send pll requests
+
 License
 =======
 
