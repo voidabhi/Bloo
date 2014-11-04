@@ -2,7 +2,7 @@
 Bloo
 ===========
 
-Unofficial api of [Internshala](http://www.internshala.com)
+Unofficial REST api of [Internshala](http://www.internshala.com)
 
 Contribution
 ============
