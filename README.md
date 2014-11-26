@@ -13,6 +13,9 @@ Contribution
 
 Feel free to send pull requests.
 
+Developed By
+============
+
 License
 =======
 
