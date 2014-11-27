@@ -16,6 +16,8 @@ Feel free to send pull requests.
 Developed By
 ============
 
+`void.aby@gmail.com`
+
 License
 =======
 
