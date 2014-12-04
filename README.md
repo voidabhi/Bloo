@@ -6,7 +6,7 @@ Bloo
 
 Unofficial REST api of [Internshala](http://www.internshala.com)
 
-Domain:http://bloo-testing555.rhcloud.com
+# Base URL:http://bloo-testing555.rhcloud.com
 
 Contribution
 ============
