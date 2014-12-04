@@ -16,7 +16,7 @@ Feel free to send pull requests.
 Developed By
 ============
 
-`void.aby@gmail.com`
+`Abhijeet Mohan` - `void.aby@gmail.com`
 
 <a href="https://plus.google.com/104070882148677917719/about">
   <img alt="Follow me on Google+"
