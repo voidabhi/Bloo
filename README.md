@@ -15,6 +15,7 @@ Feel free to send pull requests.
 
 Dependencies
 ============
+`express` `request`
 
 
 Developed By
