@@ -77,7 +77,8 @@ function getInternshipsFields(url,callback){
 	request(url, function (error, response, body) {
 		
 		if(!error&& response.statusCode == 200) {
-			$ = cheerio.load(body,{   normalizeWhitespace: true});
+
+// caching cheerio object			$ = cheerio.load(body,{   normalizeWhitespace: true});
 			
 			var dropdown = $('ul.dropdown-menu').first();
 			
