@@ -4,7 +4,7 @@ Bloo
 
 ![Android](https://github.com/voidabhi/Bloo/blob/master/internshala_logo.png)
 
-Unofficial REST api of [Internshala](http://www.internshala.com)
+Unofficial node api of [Internshala](http://www.internshala.com)
 
 Contribution
 ============
