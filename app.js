@@ -75,16 +75,18 @@ app.get('/streams',function(req,res){
 
 function getInternshipsFields(url,callback){
 	request(url, function (error, response, body) {
+		var dropdown, links, fieldsArray;
 		
 		if(!error&& response.statusCode == 200) {
 
-// caching cheerio object			$ = cheerio.load(body,{   normalizeWhitespace: true});
+// caching cheerio object			
+			$ = cheerio.load(body,{   normalizeWhitespace: true});
 			
-			var dropdown = $('ul.dropdown-menu').first();
+			dropdown = $('ul.dropdown-menu').first();
+		
+			links  = dropdown.find('a').toArray();
 			
-			var links  = dropdown.find('a').toArray();
-			
-			var fieldsArray = [];
+			fieldsArray = [];
 			
 			for(var link in links)
 			{
@@ -107,13 +109,14 @@ function getInternshipsPlaces(url,callback){
 	
 	
 	request(url, function (error, response, body) {
+		var links, placesArray;
 		
 		if(!error&& response.statusCode == 200) {
 			$ = cheerio.load(body,{   normalizeWhitespace: true});
 			
-			var links = $('a.footer-link-anchor').toArray();
+			links = $('a.footer-link-anchor').toArray();
 			
-			var placesArray = [];
+			placesArray = [];
 			
 			for(var  i=0;i<9;i++)
 			{
@@ -135,15 +138,16 @@ function getInternshipsPlaces(url,callback){
 }
 
 function getInternshipsStreams(url,callback){
+	var links, streamsArray;
 	
 	request(url, function (error, response, body) {
 		
 		if(!error&& response.statusCode == 200) {
 			$ = cheerio.load(body,{   normalizeWhitespace: true});
 			
-			var links = $('a.footer-link-anchor').toArray();
+			links = $('a.footer-link-anchor').toArray();
 			
-			var streamsArray = [];
+			streamsArray = [];
 			
 		for(var  i=9;i<18;i++)
 		{
