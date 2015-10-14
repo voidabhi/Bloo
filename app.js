@@ -26,48 +26,54 @@ app.get('/', function (req, res) {
 app.get('/fields',function(req,res){
 	getInternshipsFields(BASE_URL+'/internships',function(fieldsArray)
 	{
-		if(fieldsArray)
+		if(fieldsArray) {
 			res.send({
 				status:'success',
 				fields:fieldsArray
 			});
-		else	
+		}
+		else {	
 			res.json({
 				status:'failure',
 				message:'some error occurred while making request'
-			});			
+			});
+		}
 	});
 });
 
 app.get('/places',function(req,res){
 	getInternshipsPlaces(BASE_URL+'/internships',function(placesArray)
 	{
-		if(placesArray)
+		if(placesArray) {
 			res.send({
 				status:'success',
 				places:placesArray
 			});
-		else	
+		}
+		else	{
 			res.json({
 				status:'failure',
 				message:'some error occurred while making request'
-			});			
+			});
+		}
 	});
 });
 
 app.get('/streams',function(req,res){
 	getInternshipsStreams(BASE_URL+'/internships',function(streamsArray)
 	{
-		if(streamsArray)
+		if(streamsArray) {
 			res.send({
 				status:'success',
 				streams:streamsArray
 			});
-		else	
+		}
+		else	{
 			res.json({
 				status:'failure',
 				message:'some error occurred while making request'
-			});			
+			});
+		}
 	});
 });
 
