@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/fields',function(req,res){
-	getInternshipsFields(BASE_URL+'/internships',function(fieldsArray)
+	getInternshipsFields(BASE_URL + '/internships',function(fieldsArray)
 	{
 		if(fieldsArray) {
 			res.send({
@@ -42,7 +42,7 @@ app.get('/fields',function(req,res){
 });
 
 app.get('/places',function(req,res){
-	getInternshipsPlaces(BASE_URL+'/internships',function(placesArray)
+	getInternshipsPlaces(BASE_URL + '/internships',function(placesArray)
 	{
 		if(placesArray) {
 			res.send({
@@ -60,7 +60,7 @@ app.get('/places',function(req,res){
 });
 
 app.get('/streams',function(req,res){
-	getInternshipsStreams(BASE_URL+'/internships',function(streamsArray)
+	getInternshipsStreams(BASE_URL + '/internships',function(streamsArray)
 	{
 		if(streamsArray) {
 			res.send({
@@ -86,7 +86,7 @@ function getInternshipsFields(url,callback){
 		if(!error&& response.statusCode == 200) {
 
 // caching cheerio object			
-			$ = cheerio.load(body,{   normalizeWhitespace: true});
+			$ = cheerio.load(body,{normalizeWhitespace: true});
 			
 			dropdown = $('ul.dropdown-menu').first();
 		
@@ -166,11 +166,9 @@ function getInternshipsStreams(url,callback){
 			}
 		}			
 		
-		if (streamsArray.length>0)
+		if (streamsArray.length>0) {
 			callback(streamsArray);
-		else
-			callback(null);
-		}else {
+		} else {
 			callback(null);
 		}	
 	});	
