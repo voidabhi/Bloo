@@ -3,7 +3,8 @@
 var express = require('express');
 var request = require('request');
 var cheerio = require('cheerio');
-
+ 
+// Initialize app
 var app = express();
 
 var BASE_URL = 'http://www.internshala.com';
