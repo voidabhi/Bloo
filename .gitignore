@@ -4,3 +4,4 @@ newrelic_agent.log
 test.js
 deploy
 todolist.txt
+.DS_Store
