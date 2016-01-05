@@ -6,18 +6,17 @@ Bloo
 
 Unofficial node api of [Internshala](http://www.internshala.com)
 
-Contribution
-============
+### Contribution
 
 Feel free to send pull requests.
 
-Dependencies
-============
+### Dependencies
+
 `express` `request`
 
 
-Developed By
-============
+### Developed By
+
 
 `Abhijeet Mohan` - `void.aby@gmail.com`
 
@@ -26,8 +25,8 @@ Developed By
        src="http://data.pkmmte.com/temp/social_google_plus_logo.png" />
 </a>
 
-License
-=======
+### License
+
 
 ```
 
