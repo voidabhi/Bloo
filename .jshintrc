@@ -1,0 +1,22 @@
+
+{
+  "bitwise"  : true,
+  "eqeqeq"   : true,
+  "forin"    : true,
+  "freeze"   : true,
+  "latedef"  : "nofunc",
+  "immed"    : true,
+  "noarg"    : true,
+  "nonew"    : true,
+  "undef"    : true,
+  "newcap"   : true,
+  "nonbsp"   : true,
+  "quotmark" : "single",
+  "indent"   : 4,
+  "noempty"  : true,
+  "curly"    : true,
+  "unused"   : true,
+  "strict"   : false,
+  "esnext"   : true,
+  "node"     : true
+}
