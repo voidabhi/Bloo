@@ -6,10 +6,6 @@ Bloo
 
 Unofficial node api of [Internshala](http://www.internshala.com)
 
-### Contribution
-
-Feel free to send pull requests.
-
 ### Dependencies
 
 `express` `request`
@@ -24,6 +20,11 @@ Feel free to send pull requests.
   <img alt="Follow me on Google+"
        src="http://data.pkmmte.com/temp/social_google_plus_logo.png" />
 </a>
+
+### Contributing
+
+- Please use the [issue tracker](https://github.com/voidabhi/Bloo/issues) to report any bugs or file feature requests.
+
 
 ### License
 
