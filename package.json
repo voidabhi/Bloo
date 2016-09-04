@@ -6,7 +6,10 @@
  "repository": {
     "type": "git",
     "url": "https://github.com/voidabhi/Bloo"
-  },  
+  }, 
+  "scripts": {
+    "lint": "jshint ./"
+  }
   "keywords": [
     "internshala",
     "api",
