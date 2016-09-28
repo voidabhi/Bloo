@@ -8,8 +8,9 @@
     "url": "https://github.com/voidabhi/Bloo"
   }, 
   "scripts": {
+    "run": "node app.js",
     "lint": "jshint ./"
-  }
+  },
   "keywords": [
     "internshala",
     "api",
