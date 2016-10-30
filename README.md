@@ -10,6 +10,13 @@ Unofficial node api of [Internshala](http://www.internshala.com)
 
 `express` `request`
 
+### Building
+
+```bash
+  $ npm install
+  $ npm run build
+```
+
 
 ### Developed By
 
