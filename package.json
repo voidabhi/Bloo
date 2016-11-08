@@ -10,6 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "lint": "jshint ./",
+    "style": "jscs ./"
     "build": "npm run lint && npm run start"
   },
   "keywords": [
